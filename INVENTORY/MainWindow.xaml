@@ -14,7 +14,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="625">
     <Grid>
-        <Rectangle Margin="108,84,109,85" >
+        <Rectangle Height="250" Width="400">
             <Rectangle.Fill>
 
                 <ImageBrush ImageSource="C:\Users\ROCCA\source\repos\Drag-Drop-Inventory\INVENTORY\bcg.png"/>
@@ -22,7 +22,7 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <Grid x:Name="grid" Margin="108,84,109,85"  >
+        <Grid x:Name="grid" Height="250" Width="400"  >
             <Grid.RowDefinitions>
                 <RowDefinition Height="50" />
                 <RowDefinition Height="50" />
@@ -42,6 +42,7 @@
             </Grid.ColumnDefinitions>
 
             <Rectangle
+                Panel.ZIndex="1"
                 Grid.Column="0"
                 Grid.Row="0"
                 Name="rect"
@@ -60,14 +61,14 @@
             </Rectangle>
 
             <Rectangle
-                Grid.Row="1"
+                Panel.ZIndex="0"
                 Name="rect1"
                 Width="48"
                 Height="48"
                 Canvas.Top="65"             
                 MouseLeftButtonDown="rect_MouseLeftButtonDown"
                 MouseLeftButtonUp="rect_MouseLeftButtonUp"
-                MouseMove="rect_MouseMove" Margin="0,2,2,0"
+                MouseMove="rect_MouseMove" Margin="0,0,2,2"
                 >
                 <Rectangle.Fill>
 

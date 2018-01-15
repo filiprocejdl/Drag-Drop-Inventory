@@ -45,15 +45,34 @@ namespace INVENTORY
         {
             if (!_isRectDragInProg) return;
 
-            // get the position of the mouse relative to the Canvas
             var mousePos = e.GetPosition(grid);
-
-            // center the rect on the mouse          
+      
             double left = mousePos.X  / 50;
             double top = mousePos.Y  / 50;
 
             int promleft = (int)left;
             int promright = (int)top;
+
+
+            /*
+            if (_isRectDragInProg == false)
+            {
+                _isRectDragInProg = true;
+                obj = sender as Rectangle;
+                Panel.SetZIndex(obj, 100);             
+            } else
+            {
+                _isRectDragInProg = true;
+                obj = sender as Rectangle;
+                Panel.SetZIndex(obj, 00);
+            } */ 
+            
+
+
+
+
+                Panel.SetZIndex(rect1, 1);
+                
 
             Grid.SetColumn(obj, promleft);
             Grid.SetRow(obj, promright);
