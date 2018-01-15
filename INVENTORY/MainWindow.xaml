@@ -3,8 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"      
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal" 
@@ -15,42 +14,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="625">
     <Grid>
+        <Rectangle Margin="108,84,109,85" >
+            <Rectangle.Fill>
 
-        <Canvas Margin="73,27,142,141">
-            <Canvas.Background>
-                <DrawingBrush TileMode="Tile" Viewport=" 0,0,50,50" 
-                                     ViewportUnits="Absolute">
-                    <DrawingBrush.Drawing>
-                        <GeometryDrawing>
-                            <GeometryDrawing.Geometry>
-                                <RectangleGeometry Rect="0,0,50,50"/>
-                            </GeometryDrawing.Geometry>
-                            <GeometryDrawing.Pen>
-                                <Pen Brush="Gray" Thickness="1"/>
-                            </GeometryDrawing.Pen>
-                        </GeometryDrawing>
-                    </DrawingBrush.Drawing>
-                </DrawingBrush>
-            </Canvas.Background>
-        </Canvas>
+                <ImageBrush ImageSource="C:\Users\ROCCA\source\repos\Drag-Drop-Inventory\INVENTORY\bcg.png"/>
 
-        <Grid x:Name="grid"  Margin="73,27,142,141">
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Grid x:Name="grid" Margin="108,84,109,85"  >
             <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
+                <ColumnDefinition Width="50" />
             </Grid.ColumnDefinitions>
 
             <Rectangle
@@ -66,7 +54,7 @@
                 >
                 <Rectangle.Fill>
 
-                    <ImageBrush ImageSource="D:\rocejfi15\obrázky\rpg\sword.png"/>
+                    <ImageBrush ImageSource="C:\Users\ROCCA\source\repos\Drag-Drop-Inventory\INVENTORY\sword.png"/>
 
                 </Rectangle.Fill>
             </Rectangle>
@@ -74,22 +62,24 @@
             <Rectangle
                 Grid.Row="1"
                 Name="rect1"
-                Width="50"
-                Height="50"
+                Width="48"
+                Height="48"
                 Canvas.Top="65"             
                 MouseLeftButtonDown="rect_MouseLeftButtonDown"
                 MouseLeftButtonUp="rect_MouseLeftButtonUp"
-                MouseMove="rect_MouseMove"
+                MouseMove="rect_MouseMove" Margin="0,2,2,0"
                 >
                 <Rectangle.Fill>
 
-                    <ImageBrush ImageSource="D:\rocejfi15\obrázky\rpg\heal.png"/>
+                    <ImageBrush ImageSource="C:\Users\ROCCA\source\repos\Drag-Drop-Inventory\INVENTORY\heal.png"/>
 
                 </Rectangle.Fill>
             </Rectangle>
 
 
+
         </Grid>
+
 
 
 
