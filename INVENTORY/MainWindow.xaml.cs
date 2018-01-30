@@ -31,6 +31,7 @@ namespace INVENTORY
         {
             _isRectDragInProg = true;
             obj = sender as Rectangle;
+            Panel.SetZIndex(obj, 100);
 
             obj.CaptureMouse();
         }
@@ -38,8 +39,19 @@ namespace INVENTORY
         private void rect_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             _isRectDragInProg = false;
-            obj.ReleaseMouseCapture();
+            obj.ReleaseMouseCapture();         
+            Panel.SetZIndex(obj, 0);
         }
+
+        private void rect_Control(object sender, MouseButtonEventArgs e)
+        {
+            _isRectDragInProg = true;
+            var mousePos = e.GetPosition(grid);
+
+            //if (Grid.GetColumn(obj) == )
+
+        }
+
 
         private void rect_MouseMove(object sender, MouseEventArgs e)
         {
@@ -54,18 +66,8 @@ namespace INVENTORY
             int promright = (int)top;
 
 
-            /*
-            if (_isRectDragInProg == false)
-            {
-                _isRectDragInProg = true;
-                obj = sender as Rectangle;
-                Panel.SetZIndex(obj, 100);             
-            } else
-            {
-                _isRectDragInProg = true;
-                obj = sender as Rectangle;
-                Panel.SetZIndex(obj, 00);
-            } */ 
+            
+           
             
 
 

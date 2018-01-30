@@ -17,7 +17,7 @@
         <Rectangle Height="250" Width="400">
             <Rectangle.Fill>
 
-                <ImageBrush ImageSource="C:\Users\ROCCA\source\repos\Drag-Drop-Inventory\INVENTORY\bcg.png"/>
+                <ImageBrush ImageSource="D:\rocejfi15\c#\INVENTORY\INVENTORY\bcg.png"/>
 
             </Rectangle.Fill>
         </Rectangle>
@@ -44,7 +44,7 @@
             <Rectangle
                 Panel.ZIndex="1"
                 Grid.Column="0"
-                Grid.Row="0"
+                Grid.Row="1"
                 Name="rect"
                 Width="50"
                 Height="50"
@@ -55,7 +55,7 @@
                 >
                 <Rectangle.Fill>
 
-                    <ImageBrush ImageSource="C:\Users\ROCCA\source\repos\Drag-Drop-Inventory\INVENTORY\sword.png"/>
+                    <ImageBrush ImageSource="D:\rocejfi15\c#\INVENTORY\INVENTORY\sword.png"/>
 
                 </Rectangle.Fill>
             </Rectangle>
@@ -72,7 +72,25 @@
                 >
                 <Rectangle.Fill>
 
-                    <ImageBrush ImageSource="C:\Users\ROCCA\source\repos\Drag-Drop-Inventory\INVENTORY\heal.png"/>
+                    <ImageBrush ImageSource="D:\rocejfi15\c#\INVENTORY\INVENTORY\heal.png"/>
+
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <Rectangle
+                
+                Panel.ZIndex="0"
+                Name="rect2"
+                Width="48"
+                Height="48"
+                Canvas.Top="65"             
+                MouseLeftButtonDown="rect_MouseLeftButtonDown"
+                MouseLeftButtonUp="rect_MouseLeftButtonUp"
+                MouseMove="rect_MouseMove" Margin="0,0,2,2" Grid.Row="2"
+                >
+                <Rectangle.Fill>
+
+                    <ImageBrush ImageSource="D:\rocejfi15\c#\INVENTORY\INVENTORY\heal.png"/>
 
                 </Rectangle.Fill>
             </Rectangle>
